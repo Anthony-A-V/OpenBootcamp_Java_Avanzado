@@ -21,7 +21,7 @@ public class Main {
 
     /**
      * Función que agrega una cantidad variable de valores Integer a la lista listaEnteros
-     * @param enteros Valores Integers que se le agrega a la lista
+     * @param enteros Valores Integers que se le agrega a la lista listaEnteros
      */
     public static void agregarLista(Integer... enteros) {
         listaEnteros.addAll(Arrays.asList(enteros));
