@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Ejercicios_tema_3_4_5" />
+        <module name="demoSpringRest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
