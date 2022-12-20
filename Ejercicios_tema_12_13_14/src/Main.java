@@ -5,7 +5,7 @@ import java.util.List;
 public class Main {
 
     /**
-     * Lista del tipo Integer que se usará para agregar e iterar sus valores
+     * Lista del tipo Integer que se usa para agregar e iterar sus valores
      */
     public static List<Integer> listaEnteros = new ArrayList<>();
 
