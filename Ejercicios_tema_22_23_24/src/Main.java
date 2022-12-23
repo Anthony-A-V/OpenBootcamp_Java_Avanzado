@@ -1,33 +1,19 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
-        Coche coche = null;
-        Scanner scanner = new Scanner(System.in);
+        Coche coche1 = new CocheElectrico("AAAAAA", "Nissan", "Azul", "Patrol");
+        Coche coche2 = new CocheCombustible("BBBBBB", "Toyota", "Negro", "Yaris");
+        Coche coche3 = new CocheHibrido("CCCCCC", "Lambrogini", "Gris", "Aventator");
 
-        int opcion;
-        do {
-            System.out.println("Ingrese el tipo de coche a crear: ");
-            System.out.println("""
-                    1 - Eléctrico
-                    2 - De combustible
-                    3 - Híbrido""");
-            opcion = scanner.nextInt();
-            if (opcion < 0 || opcion > 3) {
-                System.out.println("Opción ingresada incorrecta");
-            }
-        } while (opcion < 0 || opcion > 3);
+        CochesDB cochesDB = new CochesDBFichero();
+        Coches coches = new Coches(cochesDB);
+        coches.crearCoche(coche1);
+        coches.crearCoche(coche2);
+        coches.crearCoche(coche3);
 
-        switch (opcion) {
-            case 1 -> coche = new CocheElectrico();
-            case 2 -> coche = new CocheCombustible();
-            case 3 -> coche = new CocheHibrido();
-        }
-
-        if (coche != null) {
-            coche.arrancar();
-            coche.frenar();
+        for (Coche cocheActual : coches.listarCoches()) {
+            System.out.println(cocheActual.toString());
+            System.out.println();
         }
     }
 }

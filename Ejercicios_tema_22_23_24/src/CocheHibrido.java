@@ -1,5 +1,10 @@
-public class CocheHibrido extends Coche{
-    private String tipoUso;
+public class CocheHibrido extends Coche {
+    public CocheHibrido() {
+    }
+
+    public CocheHibrido(String placa, String marca, String color, String modelo) {
+        super(placa, marca, color, modelo);
+    }
 
     @Override
     public void arrancar() {
@@ -9,13 +14,5 @@ public class CocheHibrido extends Coche{
     @Override
     public void frenar() {
         System.out.println("Un coche híbrido frenando...");
-    }
-
-    public String getTipoUso() {
-        return tipoUso;
-    }
-
-    public void setTipoUso(String tipoUso) {
-        this.tipoUso = tipoUso;
     }
 }

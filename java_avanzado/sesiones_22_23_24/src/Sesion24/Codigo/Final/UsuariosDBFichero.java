@@ -43,7 +43,7 @@ public class UsuariosDBFichero extends UsuariosDB {
 
         for (Usuario usuarioActual : usuarios) {
             if (usuarioActual.nombreUsuario.equalsIgnoreCase(usuario.nombreUsuario)) {
-                return usuarioActual;
+
             }
         }
 

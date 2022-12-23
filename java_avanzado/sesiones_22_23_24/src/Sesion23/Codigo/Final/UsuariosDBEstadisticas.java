@@ -1,11 +1,5 @@
 package Sesion23.Codigo.Final;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
-import java.util.ArrayList;
-import java.util.Scanner;
-
 public class UsuariosDBEstadisticas extends UsuariosDB{
     private int totalInserciones = 0;
     private int totalEliminaciones = 0;

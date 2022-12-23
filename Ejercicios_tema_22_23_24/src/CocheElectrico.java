@@ -1,5 +1,10 @@
-public class CocheElectrico extends Coche{
-    private String tipoEnergia;
+public class CocheElectrico extends Coche {
+    public CocheElectrico() {
+    }
+
+    public CocheElectrico(String placa, String marca, String color, String modelo) {
+        super(placa, marca, color, modelo);
+    }
 
     @Override
     public void arrancar() {
@@ -9,13 +14,5 @@ public class CocheElectrico extends Coche{
     @Override
     public void frenar() {
         System.out.println("Un coche eléctrico frenando...");
-    }
-
-    public String getTipoEnergia() {
-        return tipoEnergia;
-    }
-
-    public void setTipoEnergia(String tipoEnergia) {
-        this.tipoEnergia = tipoEnergia;
     }
 }

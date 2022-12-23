@@ -1,5 +1,11 @@
-public class CocheCombustible extends Coche{
-    private String tipoCombustible;
+public class CocheCombustible extends Coche {
+
+    public CocheCombustible() {
+    }
+
+    public CocheCombustible(String placa, String marca, String color, String modelo) {
+        super(placa, marca, color, modelo);
+    }
 
     @Override
     public void arrancar() {
@@ -9,13 +15,5 @@ public class CocheCombustible extends Coche{
     @Override
     public void frenar() {
         System.out.println("Un coche de combustible frenando...");
-    }
-
-    public String getTipoCombustible() {
-        return tipoCombustible;
-    }
-
-    public void setTipoCombustible(String tipoCombustible) {
-        this.tipoCombustible = tipoCombustible;
     }
 }
