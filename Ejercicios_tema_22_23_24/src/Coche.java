@@ -48,7 +48,8 @@ public class Coche implements Vehiculo {
 
 
     @Override
-    public void arrancar() { System.out.println("Un coche arrancando...");
+    public void arrancar() {
+        System.out.println("Un coche arrancando...");
     }
 
     @Override

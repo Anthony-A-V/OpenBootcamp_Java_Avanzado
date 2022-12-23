@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Coches{
+public class Coches {
 
     CochesDB cochesDB;
     Coche coche;

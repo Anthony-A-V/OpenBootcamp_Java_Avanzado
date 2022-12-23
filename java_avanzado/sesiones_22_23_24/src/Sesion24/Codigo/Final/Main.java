@@ -1,7 +1,7 @@
 package Sesion24.Codigo.Final;
 
 public class Main {
-    public static void main(String []args) {
+    public static void main(String[] args) {
         Usuario usuario = new Usuario();
         usuario.nombreUsuario = "openbootcamp";
         usuario.nombre = "Open";
