@@ -11,9 +11,13 @@ public class Main {
         coches.crearCoche(coche2);
         coches.crearCoche(coche3);
 
+        coches.eliminarCoche("DDDDDD");
+
         for (Coche cocheActual : coches.listarCoches()) {
             System.out.println(cocheActual.toString());
             System.out.println();
         }
+
+        System.out.println(coches.buscarCoche("CCCCCC"));
     }
 }

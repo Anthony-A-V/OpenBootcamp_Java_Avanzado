@@ -75,10 +75,9 @@ public class CochesDBFichero implements CochesDB {
 
         try {
             PrintStream printStream = new PrintStream(ficheroDatos);
-
             for (Coche cocheActual : coches) {
                 String cocheComas = separarCochePorComas(cocheActual);
-                printStream.println(cocheActual);
+                printStream.println(cocheComas);
             }
 
             printStream.close();
